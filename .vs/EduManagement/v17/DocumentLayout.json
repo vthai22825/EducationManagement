@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vthai\\source\\repos\\EduManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\dtos\\userdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\edumanagement.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\edumanagement.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\controllers\\enrollmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\services\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\services\\enrollmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\dtos\\enrollmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\dtos\\enrollmentdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\dtos\\coursedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\dtos\\coursedtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\models\\enrollment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|c:\\users\\vthai\\source\\repos\\edumanagement\\edumanagement\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62961A98-1790-400E-AF82-AEFB696979F2}|EduManagement\\EduManagement.csproj|solutionrelative:edumanagement\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "EduManagement\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T03:27:13.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "EduManagement\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T03:26:47.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Program.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Program.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Program.cs",
+              "RelativeToolTip": "EduManagement\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwB0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T03:28:52.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EnrollmentService.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Services\\EnrollmentService.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Services\\EnrollmentService.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Services\\EnrollmentService.cs",
+              "RelativeToolTip": "EduManagement\\Services\\EnrollmentService.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwGYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T03:13:19.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CourseService.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Services\\CourseService.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Services\\CourseService.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Services\\CourseService.cs",
+              "RelativeToolTip": "EduManagement\\Services\\CourseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T03:13:09.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserDtos.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Dtos\\UserDtos.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Dtos\\UserDtos.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Dtos\\UserDtos.cs",
+              "RelativeToolTip": "EduManagement\\Dtos\\UserDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T02:35:05.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Services\\UserService.cs",
+              "RelativeToolTip": "EduManagement\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T03:12:57.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\appsettings.json",
+              "RelativeDocumentMoniker": "EduManagement\\appsettings.json",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\appsettings.json",
+              "RelativeToolTip": "EduManagement\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-08-20T03:28:54.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnrollmentsController.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Controllers\\EnrollmentsController.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Controllers\\EnrollmentsController.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Controllers\\EnrollmentsController.cs",
+              "RelativeToolTip": "EduManagement\\Controllers\\EnrollmentsController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T03:28:35.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EduManagement.http",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\EduManagement.http",
+              "RelativeDocumentMoniker": "EduManagement\\EduManagement.http",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\EduManagement.http",
+              "RelativeToolTip": "EduManagement\\EduManagement.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-08-20T03:29:50.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "EduManagement\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T03:12:05.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EnrollmentDtos.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Dtos\\EnrollmentDtos.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Dtos\\EnrollmentDtos.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Dtos\\EnrollmentDtos.cs",
+              "RelativeToolTip": "EduManagement\\Dtos\\EnrollmentDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T03:10:17.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CourseDtos.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Dtos\\CourseDtos.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Dtos\\CourseDtos.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Dtos\\CourseDtos.cs",
+              "RelativeToolTip": "EduManagement\\Dtos\\CourseDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T03:09:57.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Enrollment.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Models\\Enrollment.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Models\\Enrollment.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Models\\Enrollment.cs",
+              "RelativeToolTip": "EduManagement\\Models\\Enrollment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T02:34:30.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Models\\Course.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Models\\Course.cs",
+              "RelativeToolTip": "EduManagement\\Models\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T02:34:07.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Models\\User.cs",
+              "RelativeDocumentMoniker": "EduManagement\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\Models\\User.cs",
+              "RelativeToolTip": "EduManagement\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-20T02:33:48.956Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
