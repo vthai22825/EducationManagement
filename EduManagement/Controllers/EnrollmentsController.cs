@@ -1,6 +1,7 @@
 ﻿using EduManagementAPI.DTOs;
 using EduManagementAPI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EduManagementAPI.Controllers
 {
@@ -28,6 +29,7 @@ namespace EduManagementAPI.Controllers
         }
 
         [HttpPut("{id}/status")]
+        [Authorize(Roles = "Instructor")]
         public async Task<ActionResult<EnrollmentDto>> UpdateStatus(int id, [FromQuery] string status)
         {
             var updated = await _service.UpdateStatus(id, status);

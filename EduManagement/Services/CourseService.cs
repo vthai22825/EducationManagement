@@ -11,6 +11,8 @@ namespace EduManagementAPI.Services
         Task<List<CourseDto>> GetAll();
         Task<CourseDto?> GetById(int id);
         Task<CourseDto> Create(CreateCourseDto dto);
+        Task<CourseDto?> Update(int id, UpdateCourseDto dto);
+        Task<bool> Delete(int id);
     }
 
     public class CourseService : ICourseService
@@ -43,6 +45,28 @@ namespace EduManagementAPI.Services
             _context.Courses.Add(c);
             await _context.SaveChangesAsync();
             return new CourseDto { CourseId = c.CourseId, Title = c.Title, Description = c.Description };
+        }
+
+        public async Task<CourseDto?> Update(int id, UpdateCourseDto dto)
+        {
+            var course = await _context.Courses.FindAsync(id);
+            if (course == null) return null;
+
+            course.Title = dto.Title;
+            course.Description = dto.Description;
+            
+            await _context.SaveChangesAsync();
+            return new CourseDto { CourseId = course.CourseId, Title = course.Title, Description = course.Description };
+        }
+
+        public async Task<bool> Delete(int id)
+        {
+            var course = await _context.Courses.FindAsync(id);
+            if (course == null) return false;
+
+            _context.Courses.Remove(course);
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }

@@ -1,6 +1,11 @@
 ﻿using EduManagementAPI.DTOs;
+using EduManagementAPI.Models;
 using EduManagementAPI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace EduManagementAPI.Controllers
 {
@@ -9,7 +14,13 @@ namespace EduManagementAPI.Controllers
     public class UsersController : ControllerBase
     {
         private readonly IUserService _service;
-        public UsersController(IUserService service) => _service = service;
+        private readonly IConfiguration _configuration;
+        
+        public UsersController(IUserService service, IConfiguration configuration)
+        {
+            _service = service;
+            _configuration = configuration;
+        }
 
         [HttpPost("register")]
         public async Task<ActionResult<UserDto>> Register(UserRegisterDto dto)
@@ -20,16 +31,23 @@ namespace EduManagementAPI.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<ActionResult<UserDto>> Login(UserLoginDto dto)
+        public async Task<ActionResult<LoginResponse>> Login(UserLoginDto dto)
         {
             var user = await _service.Authenticate(dto.UserName, dto.UserPassword);
             if (user == null) return Unauthorized("Invalid credentials.");
-            return Ok(new UserDto
+            
+            var token = GenerateJwtToken(user);
+            
+            return Ok(new LoginResponse
             {
-                UserId = user.UserId,
-                UserName = user.UserName,
-                FullName = user.FullName,
-                Role = user.Role
+                User = new UserDto
+                {
+                    UserId = user.UserId,
+                    UserName = user.UserName,
+                    FullName = user.FullName,
+                    Role = user.Role
+                },
+                Token = token
             });
         }
 
@@ -44,5 +62,39 @@ namespace EduManagementAPI.Controllers
             if (user == null) return NotFound();
             return Ok(user);
         }
+
+        private string GenerateJwtToken(User user)
+        {
+            var jwtKey = _configuration["Jwt:Key"];
+            var jwtIssuer = _configuration["Jwt:Issuer"];
+            var jwtAudience = _configuration["Jwt:Audience"];
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey!));
+            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+                new Claim(ClaimTypes.Name, user.UserName),
+                new Claim(ClaimTypes.GivenName, user.FullName),
+                new Claim(ClaimTypes.Role, user.Role)
+            };
+
+            var token = new JwtSecurityToken(
+                issuer: jwtIssuer,
+                audience: jwtAudience,
+                claims: claims,
+                expires: DateTime.UtcNow.AddHours(24),
+                signingCredentials: credentials
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+    }
+
+    public class LoginResponse
+    {
+        public UserDto User { get; set; } = new();
+        public string Token { get; set; } = string.Empty;
     }
 }

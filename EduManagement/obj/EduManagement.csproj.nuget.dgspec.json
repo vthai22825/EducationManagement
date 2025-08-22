@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\EduManagement.csproj": {}
+    "C:\\Users\\vthai\\Downloads\\EducationManagement-main\\EducationManagement-main\\EducationManagement-main\\EduManagement\\EduManagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\EduManagement.csproj": {
+    "C:\\Users\\vthai\\Downloads\\EducationManagement-main\\EducationManagement-main\\EducationManagement-main\\EduManagement\\EduManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\EduManagement.csproj",
+        "projectUniqueName": "C:\\Users\\vthai\\Downloads\\EducationManagement-main\\EducationManagement-main\\EducationManagement-main\\EduManagement\\EduManagement.csproj",
         "projectName": "EduManagement",
-        "projectPath": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\EduManagement.csproj",
+        "projectPath": "C:\\Users\\vthai\\Downloads\\EducationManagement-main\\EducationManagement-main\\EducationManagement-main\\EduManagement\\EduManagement.csproj",
         "packagesPath": "C:\\Users\\vthai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\obj\\",
+        "outputPath": "C:\\Users\\vthai\\Downloads\\EducationManagement-main\\EducationManagement-main\\EducationManagement-main\\EduManagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

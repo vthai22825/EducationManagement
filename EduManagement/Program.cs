@@ -16,6 +16,25 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<ICourseService, CourseService>();
 builder.Services.AddScoped<IEnrollmentService, EnrollmentService>();
 
+// Add CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.SetIsOriginAllowed(origin => 
+        {
+            // Allow any localhost origin for development
+            return origin.StartsWith("http://localhost:") || 
+                   origin.StartsWith("http://127.0.0.1:") ||
+                   origin.StartsWith("https://localhost:") ||
+                   origin.StartsWith("https://127.0.0.1:");
+        })
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowCredentials();
+    });
+});
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -52,6 +71,10 @@ if (app.Environment.IsDevelopment())
 
 // Middleware
 app.UseHttpsRedirection();
+
+// Use CORS
+app.UseCors("AllowFrontend");
+
 app.UseAuthentication();
 app.UseAuthorization();
 

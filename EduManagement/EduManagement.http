@@ -1,6 +1,0 @@
-@EduManagement_HostAddress = http://localhost:5071
-
-GET {{EduManagement_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

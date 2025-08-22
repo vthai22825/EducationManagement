@@ -1,0 +1,186 @@
+/* Table Container */
+.table-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.users-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+}
+
+.users-table tr:hover {
+    background-color: #f8f9fa;
+}
+
+.users-table td {
+    color: #666;
+}
+
+.user-role {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.user-role.student {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.user-role.instructor {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.user-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.user-actions .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+}
+
+/* No users message */
+.no-users {
+    text-align: center;
+    padding: 4rem 2rem;
+    color: #666;
+}
+
+.no-users i {
+    font-size: 4rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+}
+
+.no-users h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.no-users p {
+    color: #999;
+}
+
+/* User Detail Modal */
+.user-detail-content {
+    padding: 1.5rem;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+}
+
+.user-avatar i {
+    font-size: 2rem;
+    color: white;
+}
+
+.user-details h3 {
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.user-details p {
+    color: #666;
+    margin-bottom: 0.25rem;
+}
+
+.user-details strong {
+    color: #333;
+}
+
+.user-stats h4 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.stats-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.stat-label {
+    font-weight: 500;
+    color: #666;
+}
+
+.stat-value {
+    font-weight: bold;
+    color: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+    }
+    
+    .users-table {
+        min-width: 600px;
+    }
+    
+    .user-info {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .user-avatar {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .user-actions {
+        flex-direction: column;
+    }
+}
+
+
+

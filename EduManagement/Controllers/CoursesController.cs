@@ -1,6 +1,7 @@
 ﻿using EduManagementAPI.DTOs;
 using EduManagementAPI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace EduManagementAPI.Controllers
 {
@@ -24,6 +25,7 @@ namespace EduManagementAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Instructor")]
         public async Task<ActionResult<CourseDto>> Create(CreateCourseDto dto)
         {
             var course = await _service.Create(dto);

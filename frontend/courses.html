@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý khóa học - Hệ Thống Quản Lý Giáo Dục</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduManagement</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link active">Khóa học</a>
+                </li>
+                <li class="nav-item">
+                    <a href="enrollments.html" class="nav-link">Đăng ký khóa học</a>
+                </li>
+                <li class="nav-item admin-only" style="display: none;">
+                    <a href="users.html" class="nav-link">Người dùng</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Đăng nhập</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Quản lý khóa học</h1>
+                <button class="btn btn-primary" id="addCourseBtn">
+                    <i class="fas fa-plus"></i> Thêm khóa học
+                </button>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="search-filter">
+                <div class="search-box">
+                    <input type="text" id="courseSearch" placeholder="Tìm kiếm khóa học...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <!-- Courses Grid -->
+            <div class="courses-grid" id="coursesGrid">
+                <!-- Courses will be loaded here -->
+            </div>
+
+            <!-- Loading -->
+            <div class="loading" id="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Đang tải...</p>
+            </div>
+
+            <!-- No courses message -->
+            <div class="no-courses" id="noCourses" style="display: none;">
+                <i class="fas fa-book-open"></i>
+                <h3>Chưa có khóa học nào</h3>
+                <p>Hãy thêm khóa học đầu tiên để bắt đầu</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add Course Modal -->
+    <div class="modal" id="addCourseModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Thêm khóa học mới</h2>
+                <button class="close-btn" id="closeAddCourseModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="addCourseForm">
+                <div class="form-group">
+                    <label for="courseTitle">Tên khóa học</label>
+                    <input type="text" id="courseTitle" name="title" required>
+                </div>
+                <div class="form-group">
+                    <label for="courseDescription">Mô tả</label>
+                    <textarea id="courseDescription" name="description" rows="4"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelAddCourse">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Thêm khóa học</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Course Detail Modal -->
+    <div class="modal" id="courseDetailModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="courseDetailTitle">Chi tiết khóa học</h2>
+                <button class="close-btn" id="closeCourseDetailModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="course-detail-content">
+                <div class="course-info">
+                    <h3 id="courseDetailName"></h3>
+                    <p id="courseDetailDescription"></p>
+                </div>
+                <div class="course-stats">
+                    <div class="stat">
+                        <span class="stat-label">Số sinh viên đăng ký:</span>
+                        <span class="stat-value" id="courseEnrollmentCount">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html>

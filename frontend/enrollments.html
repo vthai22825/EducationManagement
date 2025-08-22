@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đăng ký - Hệ Thống Quản Lý Giáo Dục</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enrollments.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduManagement</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Khóa học</a>
+                </li>
+                <li class="nav-item">
+                    <a href="enrollments.html" class="nav-link active">Đăng ký khóa học</a>
+                </li>
+                <li class="nav-item admin-only" style="display: none;">
+                    <a href="users.html" class="nav-link">Người dùng</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Đăng nhập</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Quản lý đăng ký khóa học</h1>
+                <button class="btn btn-primary" id="addEnrollmentBtn">
+                    <i class="fas fa-plus"></i> Đăng ký khóa học
+                </button>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="search-filter">
+                <div class="search-box">
+                    <input type="text" id="enrollmentSearch" placeholder="Tìm kiếm đăng ký...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-box">
+                    <select id="statusFilter">
+                        <option value="">Tất cả trạng thái</option>
+                        <option value="Pending">Chờ duyệt</option>
+                        <option value="Approved">Đã duyệt</option>
+                        <option value="Rejected">Từ chối</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Enrollments Table -->
+            <div class="table-container">
+                <table class="enrollments-table" id="enrollmentsTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Sinh viên</th>
+                            <th>Khóa học</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="enrollmentsTableBody">
+                        <!-- Enrollments will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Loading -->
+            <div class="loading" id="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Đang tải...</p>
+            </div>
+
+            <!-- No enrollments message -->
+            <div class="no-enrollments" id="noEnrollments" style="display: none;">
+                <i class="fas fa-clipboard-list"></i>
+                <h3>Chưa có đăng ký nào</h3>
+                <p>Hãy tạo đăng ký đầu tiên</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Add Enrollment Modal -->
+    <div class="modal" id="addEnrollmentModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Đăng ký khóa học mới</h2>
+                <button class="close-btn" id="closeAddEnrollmentModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="addEnrollmentForm">
+                <div class="form-group">
+                    <label for="enrollmentStudent">Sinh viên</label>
+                    <select id="enrollmentStudent" name="studentId" required>
+                        <option value="">Chọn sinh viên</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="enrollmentCourse">Khóa học</label>
+                    <select id="enrollmentCourse" name="courseId" required>
+                        <option value="">Chọn khóa học</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelAddEnrollment">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Đăng ký</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Update Status Modal -->
+    <div class="modal" id="updateStatusModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Cập nhật trạng thái đăng ký</h2>
+                <button class="close-btn" id="closeUpdateStatusModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="updateStatusForm">
+                <div class="form-group">
+                    <label for="enrollmentStatus">Trạng thái</label>
+                    <select id="enrollmentStatus" name="status" required>
+                        <option value="Pending">Chờ duyệt</option>
+                        <option value="Approved">Đã duyệt</option>
+                        <option value="Rejected">Từ chối</option>
+                    </select>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancelUpdateStatus">Hủy</button>
+                    <button type="submit" class="btn btn-primary">Cập nhật</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/enrollments.js"></script>
+</body>
+</html>

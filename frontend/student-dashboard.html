@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Hệ Thống Quản Lý Giáo Dục</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/student.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduManagement - Student</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="student-dashboard.html" class="nav-link active">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Khóa học</a>
+                </li>
+                <li class="nav-item">
+                    <a href="enrollments.html" class="nav-link">Đăng ký khóa học</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link login-btn">Student Portal</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Student Dashboard</h1>
+                <div class="student-info">
+                    <span class="student-badge">Student</span>
+                    <span class="student-name" id="studentName">Loading...</span>
+                </div>
+            </div>
+
+            <!-- Welcome Section -->
+            <div class="welcome-section">
+                <div class="welcome-content">
+                    <h2>Chào mừng trở lại!</h2>
+                    <p>Hãy khám phá các khóa học mới và theo dõi tiến độ học tập của bạn.</p>
+                </div>
+                <div class="welcome-actions">
+                    <a href="courses.html" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Tìm khóa học
+                    </a>
+                    <a href="enrollments.html" class="btn btn-secondary">
+                        <i class="fas fa-list"></i> Xem đăng ký
+                    </a>
+                </div>
+            </div>
+
+            <!-- Student Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="enrolledCourses">0</h3>
+                        <p>Khóa học đã đăng ký</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="approvedEnrollments">0</h3>
+                        <p>Đăng ký đã duyệt</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="pendingEnrollments">0</h3>
+                        <p>Đang chờ duyệt</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="availableCourses">0</h3>
+                        <p>Khóa học có sẵn</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <h2>Thao tác nhanh</h2>
+                <div class="actions-grid">
+                    <a href="courses.html" class="action-card">
+                        <i class="fas fa-search"></i>
+                        <h3>Tìm khóa học</h3>
+                        <p>Khám phá khóa học mới</p>
+                    </a>
+                    <a href="enrollments.html" class="action-card">
+                        <i class="fas fa-list"></i>
+                        <h3>Xem đăng ký</h3>
+                        <p>Theo dõi trạng thái đăng ký</p>
+                    </a>
+                    <a href="#" class="action-card" onclick="showProfile()">
+                        <i class="fas fa-user"></i>
+                        <h3>Hồ sơ cá nhân</h3>
+                        <p>Xem thông tin cá nhân</p>
+                    </a>
+                    <a href="#" class="action-card" onclick="showProgress()">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Tiến độ học tập</h3>
+                        <p>Xem tiến độ của bạn</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Recent Enrollments -->
+            <div class="recent-enrollments">
+                <h2>Đăng ký gần đây</h2>
+                <div class="enrollments-list" id="recentEnrollmentsList">
+                    <div class="loading">Đang tải...</div>
+                </div>
+            </div>
+
+            <!-- Recommended Courses -->
+            <div class="recommended-courses">
+                <h2>Khóa học đề xuất</h2>
+                <div class="courses-grid" id="recommendedCoursesGrid">
+                    <div class="loading">Đang tải...</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Profile Modal -->
+    <div class="modal" id="profileModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Hồ sơ cá nhân</h2>
+                <button class="close-btn" onclick="closeModal('profileModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="profile-content">
+                <div class="profile-info">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="profile-details">
+                        <h3 id="profileName">Loading...</h3>
+                        <p id="profileUsername">Loading...</p>
+                        <span class="profile-role">Student</span>
+                    </div>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat-item">
+                        <span class="stat-label">Khóa học đã đăng ký:</span>
+                        <span class="stat-value" id="profileEnrolledCourses">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Đăng ký đã duyệt:</span>
+                        <span class="stat-value" id="profileApprovedEnrollments">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Đang chờ duyệt:</span>
+                        <span class="stat-value" id="profilePendingEnrollments">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Progress Modal -->
+    <div class="modal" id="progressModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Tiến độ học tập</h2>
+                <button class="close-btn" onclick="closeModal('progressModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="progress-content">
+                <div class="progress-summary">
+                    <h3>Tổng quan</h3>
+                    <div class="progress-stats">
+                        <div class="progress-item">
+                            <span class="progress-label">Tổng khóa học:</span>
+                            <span class="progress-value" id="totalEnrolledCourses">0</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">Hoàn thành:</span>
+                            <span class="progress-value" id="completedCourses">0</span>
+                        </div>
+                        <div class="progress-item">
+                            <span class="progress-label">Đang học:</span>
+                            <span class="progress-value" id="inProgressCourses">0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-chart">
+                    <h3>Biểu đồ tiến độ</h3>
+                    <div class="chart-placeholder">
+                        <i class="fas fa-chart-pie"></i>
+                        <p>Biểu đồ tiến độ sẽ được hiển thị ở đây</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/student-dashboard.js"></script>
+</body>
+</html>

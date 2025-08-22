@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý người dùng - Hệ Thống Quản Lý Giáo Dục</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/users.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>EduManagement</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="courses.html" class="nav-link">Khóa học</a>
+                </li>
+                <li class="nav-item">
+                    <a href="enrollments.html" class="nav-link">Đăng ký khóa học</a>
+                </li>
+                <li class="nav-item admin-only" style="display: none;">
+                    <a href="users.html" class="nav-link active">Người dùng</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link login-btn">Đăng nhập</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Quản lý người dùng</h1>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="search-filter">
+                <div class="search-box">
+                    <input type="text" id="userSearch" placeholder="Tìm kiếm người dùng...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-box">
+                    <select id="roleFilter">
+                        <option value="">Tất cả vai trò</option>
+                        <option value="Student">Sinh viên</option>
+                        <option value="Instructor">Giảng viên</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Users Table -->
+            <div class="table-container">
+                <table class="users-table" id="usersTable">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Tên đăng nhập</th>
+                            <th>Họ và tên</th>
+                            <th>Vai trò</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersTableBody">
+                        <!-- Users will be loaded here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Loading -->
+            <div class="loading" id="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Đang tải...</p>
+            </div>
+
+            <!-- No users message -->
+            <div class="no-users" id="noUsers" style="display: none;">
+                <i class="fas fa-users"></i>
+                <h3>Chưa có người dùng nào</h3>
+                <p>Hãy đăng ký người dùng đầu tiên</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- User Detail Modal -->
+    <div class="modal" id="userDetailModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Thông tin người dùng</h2>
+                <button class="close-btn" id="closeUserDetailModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="user-detail-content">
+                <div class="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-details">
+                        <h3 id="userDetailName"></h3>
+                        <p><strong>Tên đăng nhập:</strong> <span id="userDetailUsername"></span></p>
+                        <p><strong>Vai trò:</strong> <span id="userDetailRole"></span></p>
+                        <p><strong>ID:</strong> <span id="userDetailId"></span></p>
+                    </div>
+                </div>
+                <div class="user-stats">
+                    <h4>Thống kê</h4>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-label">Khóa học đã đăng ký:</span>
+                            <span class="stat-value" id="userEnrollmentCount">0</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Trạng thái:</span>
+                            <span class="stat-value" id="userStatus">Hoạt động</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/users.js"></script>
+</body>
+</html>

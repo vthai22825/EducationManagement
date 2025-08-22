@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lrEcZQAh+Pw=",
+  "dgSpecHash": "F+bM6HBvzJ4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\vthai\\source\\repos\\EduManagement\\EduManagement\\EduManagement.csproj",
+  "projectFilePath": "C:\\Users\\vthai\\Downloads\\EducationManagement-main\\EducationManagement-main\\EducationManagement-main\\EduManagement\\EduManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vthai\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\vthai\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
